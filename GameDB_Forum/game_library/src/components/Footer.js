@@ -96,7 +96,7 @@ export default function Footer() {
           </Grid>
         </Grid>
       </Grid>
-      <Link to={"/"} id="git_link">
+      <Link to={"https://github.com/XxMattxX5/Game_Hub"} id="git_link">
         GitHub
       </Link>
     </Grid>
