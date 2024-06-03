@@ -9,12 +9,12 @@ class Token(models.Model):
 # Models for games and there details
 class Game(models.Model):
     game_id = models.CharField(max_length=50)
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, db_index=True)
     cover_url = models.URLField(null=True, blank=True)
-    first_released = models.DateTimeField( null=True, blank=True)
+    first_released = models.DateTimeField( null=True, blank=True, db_index=True)
     storyline = models.CharField(max_length=2000, null=True, blank=True)
     summary = models.CharField(max_length=2000, null=True, blank=True)
-    genres = models.CharField(max_length=400, null=True, blank=True)
+    genres = models.CharField(max_length=400, null=True, blank=True, db_index=True)
     rating = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
