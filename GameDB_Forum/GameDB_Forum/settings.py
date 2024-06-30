@@ -20,12 +20,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
+def toBoolean(strBool):
+    return strBool.lower() in ('true', '1', 't', 'y', 'yes')
+
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-0ot9(k7%hb*%o9&=x9vo@xlx+k1#e$%_9y@0rvv$@1y%aek^h9'
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", False)
+DEBUG = toBoolean(os.getenv("DEBUG", "False"))
 
 ALLOWED_HOSTS = ['*']
 

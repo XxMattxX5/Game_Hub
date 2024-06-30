@@ -1,0 +1,1395 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+#body_background {
+  background: url("/static/game_library/images/gaming_background.png") fixed;
+  background-color: #313131;
+}
+
+.loading_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+}
+.footer {
+  color: white;
+}
+#home_about {
+  color: white;
+  font-size: 19px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#nav_bar {
+  padding-left: 0px;
+}
+#nav_logo {
+  align-items: center;
+  display: flex;
+  min-width: 190px;
+}
+#nav_links {
+  display: flex;
+}
+.nav_link_buttons {
+  width: 100%;
+}
+#side_nav {
+  position: absolute;
+  left: -180px;
+  top: -20px;
+  padding: 0px;
+  width: fit-content;
+  transition: all 0.2s linear;
+  z-index: 2;
+  display: none;
+  height: 100vh;
+}
+#side_bar {
+  background-color: black;
+}
+#side_logo {
+  align-items: center;
+  display: flex;
+  min-width: 130px;
+  margin: 20px 20px 10px 24px;
+}
+#side_logo p {
+  font-size: 18px;
+}
+#side_links span {
+  text-align: left;
+  font-size: 14px;
+}
+#toggle_side_nav {
+  top: 18px;
+  left: 180px;
+  height: 50px;
+  transition: all 0.2s linear;
+  display: none;
+  position: absolute;
+}
+
+#nav_user_box {
+  display: flex;
+  align-items: center;
+  /* background-color: #1972ca; */
+  border-radius: 8px;
+  padding: 5px;
+}
+
+#nav_profile_pic {
+  border-radius: 75px;
+  height: 40px;
+  width: 40px;
+}
+#nav_profile_down_arrow {
+  color: white;
+}
+#nav_user_dropdown {
+  position: absolute;
+  background-color: black;
+  left: -80px;
+  min-width: 150px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none;
+  z-index: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
+.footer-content {
+  padding-bottom: 20px;
+  padding-top: 20px !important;
+}
+#home_about h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 45px;
+}
+
+#home_about #nav {
+  color: white;
+}
+
+#search_bar {
+  background-color: #282c33;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#search_box {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+#search_message {
+  margin-left: 10%;
+  color: #1976d2;
+  text-align: center;
+}
+#search_input {
+  background-color: white;
+  border-radius: 8px;
+  height: 40px;
+  position: relative;
+}
+
+#search_button {
+  background-color: #464646;
+  border-radius: 8px;
+  height: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+#search_button_icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  color: #1976d2;
+}
+#sort_by {
+  margin-left: 10px;
+  width: 125px;
+
+  border-radius: 8px;
+}
+#sort_by div {
+  background-color: white;
+}
+#suggestion_dropdown {
+  padding-top: 10px;
+  background-color: white;
+  display: none;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+}
+.suggestion_link {
+  height: 50px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.suggestion_link:hover {
+  background-color: rgb(241, 240, 240);
+}
+.suggestion_image {
+  display: block;
+  height: 40px;
+  width: 30px;
+  margin-left: 20px;
+}
+.suggestion_name {
+  margin-left: 10px;
+  color: black;
+}
+
+/* Games Page Styles */
+#games_content {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  flex-wrap: wrap;
+}
+#games_filter_container {
+  background-color: #282c33;
+  max-height: 270px;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+#games_container {
+  border-radius: 8px;
+  background-color: #282c33;
+  min-height: 600px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.game_card {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  min-height: 280px;
+  height: 280px;
+  overflow: hidden;
+  background-color: #23262b;
+  color: white;
+}
+.game_card:hover {
+  height: auto;
+  overflow: visible;
+}
+.search_game_image {
+  width: 100%;
+  height: 220px;
+}
+.search_game_link {
+  text-decoration: none;
+}
+.search_game_name {
+  font-size: 20px;
+  height: fit-content;
+}
+
+#page_buttons {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.current_page {
+  background-color: #424242;
+}
+#filters_header {
+  color: white;
+  margin-top: 20px;
+}
+.filters {
+  margin-top: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+#filter1 {
+  text-align: center;
+}
+
+#filter2 {
+  text-align: center;
+}
+#filter3 {
+  background-color: white;
+  padding-left: 34px;
+  justify-content: "center";
+}
+.filter_input_box {
+  position: relative;
+  width: fit-content;
+}
+
+.filter_labels {
+  color: white;
+}
+.filter_clear_button {
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  line-height: 0px;
+  padding: 1px;
+  min-width: 0px;
+}
+/* Games Page Styles End */
+
+/* Game Detail Page Styles */
+#game_title_release {
+  color: white;
+}
+#game_details_part1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 40px;
+  min-height: 400px;
+}
+#game_detail_image {
+  margin-right: 40px;
+}
+#game_detail_image_image {
+  height: 100%;
+  width: 100%;
+  /* height: 352px;
+  width: 264px; */
+}
+#game_detail_title_video {
+  width: 100%;
+  /* width: 560px;
+  height: 345px; */
+  height: 100%;
+}
+#game_details_header,
+#game_videos_screenshots_header {
+  background-color: #272a30;
+  font-size: 31px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+#game_details {
+  min-height: 300px;
+  background-color: #23262b;
+  padding: 20px;
+  display: flex;
+  color: white;
+}
+#summary_storyline_header {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+#summary_storyline_text {
+  font-size: 20px;
+  width: 80%;
+  display: block;
+}
+#image_video_carousel {
+  display: flex;
+  padding: 20px;
+  background-color: #23262b;
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  align-items: center;
+}
+.carousel_image_video {
+  width: 560px;
+  height: 345px;
+}
+.slideshow_arrows {
+  background-color: rgb(255, 255, 255, 0.2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.slideshow_arrows:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(231, 230, 230, 0.2);
+}
+
+#no_image_video {
+  align-content: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+/* Game Detail Page Styles End */
+
+/* Login Page Style */
+#login_block {
+  background-color: #282c33;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  min-width: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  padding-bottom: 15px;
+}
+#login_header {
+  margin-bottom: 40px;
+  color: white;
+  font-weight: bold;
+}
+label[for="login_username"],
+label[for="login_password"] {
+  width: 90%;
+  display: block;
+  text-align: left;
+  margin: 0 auto;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+#login_username,
+#login_password {
+  box-sizing: border-box;
+  width: 90%;
+  height: 30px;
+  font-size: 20px;
+  padding-left: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+#login_submit {
+  box-sizing: border-box;
+  width: 90%;
+  background-color: #1976d2;
+  margin: 0 auto;
+  display: block;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#login_register {
+  border-top: 1px solid #333841;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  column-gap: 5px;
+  color: white;
+  padding-top: 5px;
+}
+#login_register_link {
+  align-content: center;
+  font-size: 19px;
+}
+#account_created_alert {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+/* Login Page Style End */
+
+/* Register Page Style */
+.register_inputs {
+  box-sizing: border-box;
+  width: 90%;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+label[for="register_username"],
+label[for="register_email"],
+label[for="register_password1"],
+label[for="register_password2"] {
+  display: block;
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 18px;
+}
+
+#register_submit {
+  box-sizing: border-box;
+  width: 90%;
+  background-color: #1976d2;
+  margin: 0 auto;
+  display: block;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.register_errors {
+  color: #f75353;
+  margin-bottom: 5px;
+}
+/* Register Page Style End */
+
+/* Forum Page Style*/
+#forum_home_box {
+  background-color: #282c33;
+  margin: 0 auto;
+  min-height: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+}
+#forum_page_header {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-top: 30px;
+}
+.home_forum_post_box {
+  margin: 0 auto;
+  background-color: white;
+
+  margin-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.forum_home_links {
+  opacity: 0;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.home_forum_post_box:hover .forum_home_links {
+  background-color: rgb(0, 0, 0, 0.5);
+  opacity: 1;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+.home_forum_post_row1 {
+  background-color: #424751;
+  padding: 10px;
+  display: flex;
+  color: white;
+}
+.home_forum_post_row2 {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.latest_post_text {
+  text-align: center;
+  align-items: top;
+}
+/* Forum Page Style End */
+
+/* SpecificPosts Page Style */
+
+#post_list_content_box {
+  margin: 50px auto;
+  background-color: #282c33;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+#go_back_link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+#post_list_header {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#new_post_link {
+  text-align: center;
+  background-color: #424751;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 10px auto;
+  color: #1972ca;
+}
+#new_post_link:hover {
+  background-color: #4d535f;
+}
+/* .post_text_preview {
+  position: relative;
+} */
+.post {
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.post_head {
+  background-color: #424751;
+  padding: 10px 25px;
+  border-radius: 8px 8px 0px 0px;
+}
+.post_headers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post_header_divider {
+  margin: 0 5px;
+  font-size: 11px;
+  color: white;
+}
+.post_username,
+.post_created {
+  font-size: 11px;
+  color: #1972ca;
+}
+
+.post_game {
+  position: relative;
+}
+.post_game_info {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  background-color: #282c33;
+  z-index: 1;
+  display: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  align-content: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.post_game:hover .post_game_info {
+  display: block;
+}
+.post_game_name {
+  font-size: 11px;
+  max-height: 15px;
+  overflow: hidden;
+  color: #1972ca;
+  text-decoration: underline;
+}
+.post_game_image {
+  height: 150px;
+  width: 100px;
+  vertical-align: top;
+  margin-left: 10px;
+}
+.post_game_text {
+  font-size: 12px;
+  width: 210px;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 10px;
+  height: 150px;
+}
+.post_title {
+  color: white;
+  font-size: 23px;
+}
+
+.post_text {
+  margin: 0 auto;
+  min-height: 300px;
+  padding: 20px 25px;
+  position: relative;
+}
+
+.post_links {
+  display: none;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.post_text:hover .post_links {
+  display: block;
+  background-color: rgb(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* SpecificPosts Page Style End */
+/* CreatePost Page Style */
+#new_post_box {
+  background-color: #282c33;
+  margin: 50px auto;
+  border-radius: 8px;
+  text-align: left;
+  padding: 40px;
+}
+#create_post_header {
+  text-align: center;
+  color: white;
+}
+label[for="new_post_text"],
+label[for="new_post_title"],
+label[for="new_post_game"] {
+  color: white;
+  display: block;
+  font-size: 23px;
+}
+#new_post_title {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 21px;
+  padding-left: 5px;
+}
+#new_post_text {
+  box-sizing: border-box;
+  min-height: 300px;
+  width: 100%;
+  font-size: 18px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+#create_post_button {
+  box-sizing: border-box;
+  display: block;
+  background-color: #1972ca;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+}
+#new_post_game_suggestions {
+  padding-top: 10px;
+  display: none;
+}
+.new_post_suggestion {
+  display: flex;
+  margin-bottom: 5px;
+  padding: 3px 0px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.new_post_suggestion:hover {
+  background-color: rgb(240, 240, 240);
+}
+.new_post_selected_game {
+  display: flex;
+  margin-bottom: 5px;
+  padding: 3px 0px;
+  align-items: center;
+}
+#create_post_alert {
+  margin: 10px auto;
+  width: 80%;
+}
+
+/* CreatePost Page Style End */
+/* Post Page Style*/
+
+#post_content_box {
+  margin: 50px auto;
+  background-color: #282c33;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+#post_comment_box {
+  padding-bottom: 20px;
+  min-height: 300px;
+  border-top: 1px black solid;
+}
+#post_make_comment {
+  margin-top: 15px;
+  text-align: center;
+}
+.post_comment_reply_box {
+  position: relative;
+}
+.post_comment_submit {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+#post_comments {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.post_comment {
+  margin-top: 10px;
+  background-color: #23262b;
+  border-radius: 25px;
+  padding: 15px;
+}
+.post_comment_header {
+  display: flex;
+}
+.post_comment_text {
+  font-size: 18px;
+  color: white;
+}
+.post_reply_button {
+  min-width: 0px;
+  padding: 0px;
+  text-transform: none;
+}
+.post_reply_button p {
+  font-size: 11px;
+}
+.post_reply_input {
+  display: none;
+  margin-top: 5px;
+}
+
+.post_reply {
+  margin-left: auto;
+  margin-top: 10px;
+}
+.post_reply_header {
+  display: flex;
+}
+
+/* Post Page Style End */
+
+/* Contact Us Page Style */
+#contact_content_box {
+  background-color: #282c33;
+  margin: 50px auto;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#contact_page_header {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  display: none;
+}
+#contact_info_box {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  row-gap: 30px;
+  color: #1972ca;
+  padding: 30px;
+  background-color: #23262b;
+  border-bottom: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+#contact_info_header {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+#contact_info_box h4 {
+  color: white;
+}
+#contact_hours_list {
+  list-style: none;
+}
+
+#contact_form_box {
+  border-radius: 8px;
+  background-color: #23262b;
+}
+#contact_form_header {
+  color: white;
+  text-align: center;
+}
+#contact_name_box,
+#contact_email_box,
+#contact_subject_box,
+#contact_message_box {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+#contact_name,
+#contact_email,
+#contact_subject,
+#contact_message {
+  background-color: white;
+  border-radius: 8px;
+}
+#contact_message {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-left: 5px;
+  min-height: 300px;
+}
+#send_email_box {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+#send_email_button {
+  background-color: #1972ca;
+  color: white;
+}
+#send_email_button:hover {
+  background-color: #1e84eb;
+}
+#contact_success_message {
+  width: 91.5%;
+  margin: 15px auto;
+}
+
+/* Contact Us Page Style End */
+
+/* Profile Page Style */
+#profile_main_content_box {
+  margin: 50px auto;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  background-color: #282c33;
+  padding: 20px;
+  border-radius: 8px;
+}
+#profile_info_bar {
+  background-color: #23262b;
+  border-radius: 8px;
+  padding: 20px;
+}
+#profile_info_bar_header {
+  color: white;
+  text-align: center;
+}
+#profile_bar_image {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+#profile_bar_image img {
+  border-radius: 75px;
+  height: 130px;
+  width: 130px;
+}
+#profile_bar_username,
+#profile_bar_email,
+#profile_bar_posts,
+#profile_bar_member_since {
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#profile_bar_username p,
+#profile_bar_email p,
+#profile_bar_posts p,
+#profile_bar_member_since p {
+  font-size: 20px;
+}
+
+#profile_box {
+  background-color: #23262b;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+#profile_change_profile_pic {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+#profile_input_pic {
+  margin-top: 20px;
+}
+#profile_input_pic input {
+  height: fit-content;
+  display: block;
+  margin-bottom: 21px;
+  max-width: 200px;
+  overflow: hidden;
+}
+#profile_image_preview {
+  width: fit-content;
+}
+#profile_save_pic {
+  height: fit-content;
+  display: block;
+  background-color: #1972ca;
+  color: white;
+  font-weight: bold;
+}
+#profile_image_preview img {
+  border-radius: 75px;
+  height: 100px;
+  width: 100px;
+}
+#profile_upload_success_message {
+  margin-bottom: 10px;
+  width: 83.3%;
+}
+#profile_change_info_box {
+  margin-top: 90px;
+}
+#profile_change_user_header {
+  color: white;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#profile_new_username_box,
+#profile_new_email_box {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+#profile_save_info_changes {
+  margin: 0 auto;
+}
+#profile_save_info_button {
+  background-color: #1972ca;
+  color: white;
+  width: 100%;
+}
+#profile_info_change_success {
+  width: 83.3%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.profile_errors {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#profile_post_list_title {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#profile_post_list_box {
+  background-color: white;
+  padding: 15px 0;
+  border-radius: 8px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.profile_post_bar {
+  margin: 0 auto;
+  background-color: #424751;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+.profile_post_bar_link {
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+.profile_post_headers {
+  display: flex;
+}
+.profile_post_headers p {
+  font-size: 11px;
+  color: #1972ca;
+}
+.profile_post_game {
+  max-width: 200px;
+  overflow: hidden;
+  height: 20px;
+}
+.profile_post_title p {
+  color: white;
+}
+/* Profile Page Style End */
+
+#git_link {
+  background-color: rgb(0, 0, 0, 0.8);
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 1600px) {
+  #profile_main_content_box {
+    width: 95%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #forum_home_box {
+    width: 95%;
+    flex-basis: auto;
+    max-width: 100%;
+  }
+  #profile_box {
+    flex-wrap: wrap;
+  }
+  #profile_user_info {
+    width: 95%;
+    flex-basis: auto;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  #profile_upload_success_message {
+    width: 90%;
+  }
+  #profile_postlist {
+    width: 95%;
+    flex-basis: auto;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #search_message_box {
+    display: none;
+  }
+  #search_box {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  #game_title_release {
+    width: 80%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  #game_details_part1 {
+    width: 80%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  .carousel_image_video {
+    width: 460px;
+    height: 245px;
+  }
+
+  #post_list_box {
+    width: 80%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  #post_content_box {
+    width: 80%;
+    flex-basis: auto;
+    max-width: 100%;
+  }
+  #new_post_box {
+    width: 80%;
+    flex-basis: auto;
+    max-width: 100%;
+  }
+  #contact_content_box {
+    width: 80%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #games_content {
+    column-gap: 20px;
+  }
+  #games_filter_container {
+    width: 25%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #toggle_side_nav {
+    display: block;
+  }
+  #nav_links {
+    display: none;
+  }
+  #nav_logo {
+    display: none;
+  }
+  #side_nav {
+    display: flex;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  .footer_column {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  #games_filter_container {
+    width: 90%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  #games_container {
+    width: 90%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  #game_title_release {
+    width: 95%;
+  }
+  #game_details_part1 {
+    width: 95%;
+  }
+  #post_list_box {
+    width: 95%;
+  }
+  #post_list_content_box {
+    padding: 20px;
+  }
+  #post_content_box {
+    width: 95%;
+    padding: 20px;
+  }
+  #new_post_box {
+    width: 95%;
+    padding: 20px;
+  }
+  #contact_content_box {
+    width: 95%;
+  }
+  #profile_main_content_box {
+    flex-wrap: wrap;
+  }
+  #profile_info_bar {
+    width: 95%;
+    max-width: 100%;
+    flex-basis: auto;
+    margin-bottom: 25px;
+  }
+  #profile_box {
+    width: 95%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #home_about {
+    margin-top: 30px;
+    width: 90%;
+  }
+  .game_card {
+    width: 100px;
+    height: 150px;
+    min-height: 160px;
+  }
+  .search_game_image {
+    height: 120px;
+  }
+  .search_game_name {
+    font-size: 13px;
+  }
+  .search_game_genres {
+    font-size: 12px;
+  }
+  #games_filter_container {
+    width: 95%;
+  }
+  #games_container {
+    width: 95%;
+  }
+  #game_title_release {
+    width: 80%;
+  }
+  #game_title_release h3 {
+    font-size: 28px;
+  }
+  #game_title_release h5 {
+    font-size: 21px;
+  }
+  #game_details_part1 {
+    width: 80%;
+  }
+  #game_detail_image {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+    flex-basis: auto;
+  }
+  #game_detail_image_image {
+    width: 100%;
+  }
+  #game_title_video_box {
+    display: none;
+  }
+  #game_details {
+    flex-wrap: wrap-reverse;
+  }
+  #game_genre_age {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  #game_storyline_summary {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: auto;
+    margin-bottom: 20px;
+  }
+  .slideshow_arrows {
+    width: 100px;
+    height: 100px;
+  }
+  #forum_home_box {
+    width: 95%;
+  }
+  .home_forum_post_box {
+    width: 90%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  #forum_page_header {
+    font-size: 40px;
+  }
+  .home_forum_post_row1 h6 {
+    font-size: 18px;
+  }
+  .home_forum_post_row2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home_forum_post_row2 h6 {
+    font-size: 18px;
+  }
+  .home_forum_post_row2 h6:last-child {
+    flex-wrap: wrap;
+    flex: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .home_forum_post_row2 h6:last-child div {
+    flex-grow: unset;
+  }
+  #create_post_header {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #search_input {
+    width: 80%;
+    max-width: 100%;
+    flex-basis: auto;
+    margin-bottom: 5px;
+  }
+  #sort_by {
+    width: 90%;
+    margin-left: 0px;
+  }
+  #login_logout_button {
+    padding-right: 0px;
+  }
+  #login_block {
+    min-width: unset;
+    width: 95%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  #login_register {
+    width: 90%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  #profile_change_info_box {
+    width: 95%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+  #profile_new_username_box,
+  #profile_new_email_box,
+  #profile_save_info_changes {
+    width: 95%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+}
