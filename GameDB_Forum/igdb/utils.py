@@ -39,7 +39,6 @@ def authenticate():
             add_or_refresh_token(response)
 
     else:
-        print("HERE2")
         # Sends a request for a token
         response = post("https://id.twitch.tv/oauth2/token", data={
                 "client_id": CLIENT_ID,

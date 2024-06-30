@@ -35,5 +35,9 @@ server {
         alias /usr/src/app/static/;
         expires 30d;
     }
+    location /media/ {
+        alias /usr/src/app/media/;
+        expires 30d;
+    }
 }
 }
